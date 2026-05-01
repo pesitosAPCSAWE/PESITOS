@@ -128,7 +128,7 @@ If you're a student in another AP CSA class working on AP with WE Service, feel 
 
 ## 🙏 Credits
 
-Built by Nogabar at Los Nogales School (Bogotá, Colombia) for AP Computer Science A, 2025–2026.
+Built by Juanita Duran at Los Nogales School (Bogotá, Colombia) for AP Computer Science A, 2025–2026.
 
 *De pesito en pesito.* 🐷
 
