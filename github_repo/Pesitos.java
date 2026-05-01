@@ -6,17 +6,7 @@ import java.util.Scanner;
  *
  * This is the main class. It contains the main method, which runs the whole app.
  *
- * AP Computer Science A concepts demonstrated:
- *   - Classes and objects (Question, Lesson)
- *   - ArrayList<Lesson> and ArrayList<Question>
- *   - 2D array  int[][] progress  to track which questions each user got right
- *   - Scanner for user input
- *   - while loops, for loops, if/else, switch
- *   - Methods that return values and methods that don't (void)
- *   - String methods: .equals(), .toLowerCase(), .length()
- *   - Basic math (average score as a percent)
- *
- * NO inheritance, NO abstract classes, NO polymorphism. Just the fundamentals.
+ 
  */
 public class Pesitos {
 
@@ -28,9 +18,7 @@ public class Pesitos {
     private static ArrayList<Lesson> lessons = new ArrayList<Lesson>();
 
     // 2D array that tracks the user's progress.
-    // progress[i][j] means: did the user get question j of lesson i correct?
-    //   0 = not attempted, 1 = got it right, -1 = got it wrong
-    // We'll resize this once lessons are built.
+   
     private static int[][] progress;
 
     public static void main(String[] args) {
@@ -43,7 +31,7 @@ public class Pesitos {
         for (int i = 0; i < lessons.size(); i++) {
             int numQuestions = lessons.get(i).getNumberOfQuestions();
             progress[i] = new int[numQuestions];
-            // Java auto-initializes int arrays to 0, which is what we want.
+          
         }
 
         // STEP 3: Show the welcome message.
@@ -78,10 +66,10 @@ public class Pesitos {
         System.out.println("\n¡Gracias por usar Pesitos! Recuerda: de pesito en pesito.\n");
     }
 
-    // ==========================================================
+   
     // buildLessons() — creates all the lessons and their questions.
     // Each lesson teaches one financial literacy topic in Spanish.
-    // ==========================================================
+ 
     public static void buildLessons() {
 
         // ----- LESSON 1: Impuestos (taxes) -----
@@ -285,9 +273,9 @@ public class Pesitos {
         lessons.add(intereses);
     }
 
-    // ==========================================================
+   
     // printWelcome() — shows the splash screen.
-    // ==========================================================
+ 
     public static void printWelcome() {
         System.out.println();
         System.out.println("===========================================");
@@ -298,9 +286,9 @@ public class Pesitos {
         System.out.println();
     }
 
-    // ==========================================================
+  
     // printMenu() — shows the main menu with lessons + progress option.
-    // ==========================================================
+  
     public static void printMenu() {
         System.out.println("---- MENÚ PRINCIPAL ----");
         for (int i = 0; i < lessons.size(); i++) {
@@ -312,10 +300,10 @@ public class Pesitos {
         System.out.print("\nEscoge una opción: ");
     }
 
-    // ==========================================================
+   
     // runLesson(int) — runs a single lesson quiz from start to finish.
     // Takes the lesson index as a parameter.
-    // ==========================================================
+   
     public static void runLesson(int lessonIndex) {
         // Safety check: make sure the index is valid.
         if (lessonIndex < 0 || lessonIndex >= lessons.size()) {
@@ -386,10 +374,10 @@ public class Pesitos {
         System.out.println();
     }
 
-    // ==========================================================
+   
     // askForAnswer() — reads the user's answer (A/B/C/D or 1-4)
     // and returns it as an int from 0 to 3. Keeps asking until valid.
-    // ==========================================================
+    
     public static int askForAnswer() {
         while (true) {
             System.out.print("Tu respuesta (A/B/C/D): ");
@@ -404,10 +392,10 @@ public class Pesitos {
         }
     }
 
-    // ==========================================================
+   
     // printProgress() — shows the user their progress across all lessons.
     // Uses the 2D progress array.
-    // ==========================================================
+   
     public static void printProgress() {
         System.out.println();
         System.out.println("====== TU PROGRESO ======");
@@ -457,11 +445,10 @@ public class Pesitos {
         System.out.println();
     }
 
-    // ==========================================================
+    
     // buildProgressBar(correct, total) — helper that returns a
     // simple text progress bar like "[###...]" based on the score.
-    // Demonstrates String manipulation + loops.
-    // ==========================================================
+ 
     public static String buildProgressBar(int correct, int total) {
         String bar = "";
         for (int i = 0; i < total; i++) {
