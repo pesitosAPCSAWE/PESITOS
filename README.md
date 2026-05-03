@@ -15,10 +15,10 @@
 
 The app was built as the technical artifact of an **AP with WE Service** project at Los Nogales School (Bogotá, Colombia), in response to a survey of 48 young Colombians and 34 adults that revealed:
 
-- **62%** of young Colombians don't understand how taxes work
-- **73%** have never made a monthly budget
-- **47%** of adults learned about money on their own
-- **Only 6%** learned anything about finance at school
+- **64%** of young Colombians don't understand how taxes work
+- **67%** have never made a monthly budget
+- **56%** of adults learned about money on their own
+- **0%** learned anything about finance at school
 
 The cycle repeats. This app is a small response.
 
