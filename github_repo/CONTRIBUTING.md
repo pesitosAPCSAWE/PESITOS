@@ -7,8 +7,8 @@ Thanks for wanting to contribute! This is a small educational project, so the ru
 - **Add a question** to an existing lesson
 - **Add a whole new lesson** (e.g., insurance, investing for beginners, taxes for freelancers)
 - **Fix a bug** if you find one
-- **Improve explanations** — clearer Spanish, more accurate info, better examples
-- **Translate or adapt** content for other Spanish-speaking countries
+- **Improve explanations** — clearer language, more accurate info, better examples
+- **Translate or adapt** content for other besides Spanish-speaking countries! I made it for colombia first but lets turn it globalll
 
 ## How to submit a contribution
 
@@ -32,7 +32,8 @@ Thanks for wanting to contribute! This is a small educational project, so the ru
    ```bash
    git push origin main
    ```
-7. **Open a Pull Request** on the original repo
+
+
 
 ## Style guide for new questions
 
@@ -55,8 +56,7 @@ miLeccion.addQuestion(new Question(
 **Good question principles:**
 - The wrong answers should be plausible, not obviously silly
 - The explanation should teach something, even to people who got it right
-- Use Colombian context (UVR, Nequi, Daviplata, COP) when relevant
-- Avoid English finance jargon unless you explain it
+
 
 ## Code of conduct
 
@@ -66,4 +66,4 @@ Be kind. This is a learning project — treat contributors and learners with res
 
 Open an Issue on GitHub and we'll talk it through.
 
-— *De pesito en pesito.* 🐷
+— *De pesito en pesito.* 
